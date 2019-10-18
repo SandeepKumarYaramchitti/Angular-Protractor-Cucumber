@@ -1,16 +1,6 @@
 # Angular 4 Protractor - Cucumber
 
 Protractor - Cucumber - Selenium integration using a Login page as a DEMO on Angular 4.
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.5.
-
-![Cucumber Reporter](https://github.com/yduartep/angular4-protractor-cucumber/blob/master/docs/e2e%20-%20demo.gif)
-
-# Get the Code
-```
-git clone https://github.com/yduartep/angular4-protractor-cucumber.git
-cd angular4-protractor-cucumber
-npm i
-```
 
 ## Development server
 
@@ -26,7 +16,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Running end-to-end tests
 
-Before to execute any functional test is necessary download and update the web drivers. 
+Before to execute any functional test is necessary download and update the web drivers.
 So run, first of all, the command `npm run webdriver:update` that will download all the necessary drivers.
 
 Now, if you have already started the server, run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
@@ -38,6 +28,7 @@ You can also specify the name of the feature(s) you want to execute separately u
 ### E2E tests - multiple capabilities
 
 If you desire to run e2e tests using multiple capabilites, you need to:
+
 1. `npm run start`: start the application server.
 2. `npm run webdriver:start`: start the selenium web driver server
 3. `npm run e2e:hub`: execute the tests using multiple browsers or different versions and/or different operating system.
@@ -51,6 +42,7 @@ If you desire to run e2e tests using multiple capabilites, you need to:
 `npm run webdriver:start` to start the webdriver manually in the case you want to use a different server for selenium.
 
 ## Cucumber report
+
 After execute the e2e tests, some html and json reports are generated in the forlder **reports**.
 
 - This report is generated in the file /reports/html/**cucumber_report.html**:
@@ -62,6 +54,7 @@ After execute the e2e tests, some html and json reports are generated in the for
 ![Cucumber Reporter](https://github.com/yduartep/angular4-protractor-cucumber/blob/master/docs/cucumber_reporter.PNG)
 
 ## E2E - Project Structure
+
 - **protractor.conf.js**: contains the protractor configuration used by angular-cli to execute the e2e tests throught the command `ng e2e` using chrome as browser by default.
 
 - **protractor.shared.conf.js**: contains the shared configuration between all kinds of tests execution that use protractor.
